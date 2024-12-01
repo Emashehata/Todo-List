@@ -1,0 +1,111 @@
+body{
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    width: fit-content;
+    
+}
+h4{
+    font-family: "Righteous", sans-serif;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    background-color: #FEC260;
+    width: 100%;
+    height: 25%;
+    bottom: 6px;
+    z-index: -1;
+    transition: all .3s;
+}
+h1:hover::before{
+    height: 60%;
+}
+.dashed{
+    border: 1px dashed;
+    /* width: 100%;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 2px;
+    background-repeat: repeat-x;
+    float: left;
+    padding: 40px 10px; */
+    
+}
+.gradientColor{
+    background: linear-gradient(to right,  #40A55B,#40A55B,#B1AB49, #B1AB49); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+.green{
+    color: #40A55B;
+}
+.mint-green{
+    color: #B1AB49;
+}
+.bg-mint-green{
+    background-color:#B1AB49 ;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-submit{
+    background-color: #d3502c;
+    color: white;
+}
+.btn-submit:hover{
+    background-color: #BB4120;
+    color: white;
+}
+.btnVisit:hover{
+    background-color:#98933d ;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+.item{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.item1{
+    background-color: #F15F5D;
+}
+.item2{
+    background-color: #FEBE2E;
+}
+.item3{
+    background-color: #4DB748;
+}
+button.swal2-close{
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    color: black;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+    text-align: unset !important;
+    padding-block: 5px !important;
+}
+div:where(.swal2-container) .swal2-html-container{
+    padding-top: 0 !important;
+    text-align: unset !important;
+}
+.fa-circle-right{
+    position: relative;
+    top:8px;
+}
+button.btnVisit:active {
+    border-style: solid 1px black !important;
+}
+button.btnVisit a:active{
+    color: black !important;
+}

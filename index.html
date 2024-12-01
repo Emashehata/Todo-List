@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container mt-5">
+        <h1 class="display-4 position-relative m-auto mt-5">Bookmarker</h1>
+        <div class="dashed mt-5"></div>
+        <h4 class="mt-3 text-center fw-semibold gradientColor"><i class="me-2 green fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="ms-2 mint-green fa-solid fa-bookmark"></i></h4>
+      </div>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="mb-4">
+          <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> <span class="ms-1 fw-bold">Site Name</span></label>
+          <input type="text" class="form-control" id="siteName" oninput="vaildation(this)" placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3">
+          <label for="siteUrl" class="form-label"><i class="fa-solid fa-link"></i> <span class="fw-bold ms-1">Site URL</span></label>
+          <input type="text" class="form-control" id="siteUrl" oninput="vaildation(this)" placeholder="Website URL">
+        </div>
+        <button class="btn btn-submit px-5 mt-4 mb-5 d-block m-auto" id="btnSubmit">Submit</button>
+        <div class="dashed"></div>
+      </div>
+    </main>
+    <!-- dispaly todo -->
+     <div class="container mt-4">
+      <table class="table text-center w-100 bg-body">
+        <thead>
+           <tr>
+            <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+           </tr>
+        </thead>
+        <tbody id="tbodyContent">
+          <!-- <tr>
+            <td>1</td>
+            <td>facebook</td>
+            <td><button class="btnVisit btn bg-mint-green text-white" id="btnVisit"><i class="fa-solid fa-eye"></i> Visit</button></td>
+            <td><button class="btnDelete btn btn-danger" id="btnDelete"><i class="fa-solid fa-trash"></i> Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+     </div>
+    <a href="" class="justify-content-start"></a>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
