@@ -35,7 +35,7 @@ function vaildation(input){
 function addTodo(){
     
         if(vaildation(siteName)&&vaildation(siteUrl)){
-            if(searchedtodo()){
+            if(searchedTodo()){
                 Swal.fire({
                     title: "Warning",
                     text: "Sorry, This site name is already exist",
@@ -114,18 +114,16 @@ function deleteTodo(index){
 
 }
 
-function searchedtodo(){
-    var term = siteName.value;
-    for(var i=0;i<todoContainer.length;i++){
-        if(todoContainer[i].siteName.includes(term.toLowerCase()))
-            {
-                return true;
-            }
-        else{
-            return false;
-        }    
+function searchedTodo() {
+    var term = siteName.value.toLowerCase(); 
+    for (var i = 0; i < todoContainer.length; i++) {
+        if (todoContainer[i].siteName.toLowerCase() === term) {
+            return true;  
+        }
     }
+    return false;  
 }
+
 
 
  
